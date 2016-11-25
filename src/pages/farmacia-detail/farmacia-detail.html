@@ -1,0 +1,49 @@
+<!--
+  Generated template for the FarmaciaDetail page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>farmacia-detail</ion-title>
+  <ion-buttons end>
+      <button ion-button color="royal" (click)="updateItem($event, selectedItem)">
+         <ion-icon md="md-create"></ion-icon>
+      </button>
+      <button ion-button color="royal" (click)="deleteItem($event, selectedItem)">
+         <ion-icon md="md-trash"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-label><b>ID</b></ion-label>
+  <p>{{selectedItem._id}}</p>
+
+  <ion-label><b>Nome</b></ion-label>
+  <p>{{selectedItem.nome}}</p>
+
+  <ion-label><b>Rua</b></ion-label>
+  <p>{{selectedItem.rua}}</p>
+
+  <ion-label><b>Bairro</b></ion-label>
+  <p>{{selectedItem.bairro}}</p>
+
+  <ion-label><b>Cidade</b></ion-label>
+  <p>{{selectedItem.cidade}}</p>
+
+  <ion-label><b>Estado</b></ion-label>
+  <p>{{selectedItem.estado}}</p>
+
+  <ion-label><b>Telefone</b></ion-label>
+  <p>{{selectedItem.telefone}}</p>
+
+
+</ion-content>
